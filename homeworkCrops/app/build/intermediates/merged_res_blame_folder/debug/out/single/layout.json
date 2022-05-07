@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_competition.xml",
+        "source": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\src\\main\\res\\layout\\activity_competition.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_winner.xml",
+        "source": "F:\\android\\Homework\\DZkot2\\src\\main\\kotlin\\homeworkCrops\\app\\src\\main\\res\\layout\\activity_winner.xml"
+    }
+]
