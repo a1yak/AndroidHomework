@@ -335,7 +335,7 @@
         tools:ignore="MissingConstraints" />
 
     <ProgressBar
-        android:id="@+id/prgBar_gomelcauliflower"
+        android:id="@+id/prgBar_gomelCauliflower"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="123dp"
         android:layout_height="15dp"

@@ -16,6 +16,26 @@ class CompetitionActivity : AppCompatActivity() {
     private val MAX_VALUE_BAR = 110
     private var listofparts:MutableList<String> = mutableListOf()
 
+    lateinit var vtPotato: ProgressBar
+    lateinit var vtCauli: ProgressBar
+    lateinit var vtBeet: ProgressBar
+    lateinit var btPotato: ProgressBar
+    lateinit var btCauli: ProgressBar
+    lateinit var btBeet: ProgressBar
+    lateinit var mnPotato: ProgressBar
+    lateinit var mnCauli: ProgressBar
+    lateinit var mnBeet: ProgressBar
+    lateinit var gmlPotato: ProgressBar
+    lateinit var gmlCauli: ProgressBar
+    lateinit var gmlBeet: ProgressBar
+    lateinit var hdnPotato: ProgressBar
+    lateinit var hdnCauli: ProgressBar
+    lateinit var hdnBeet: ProgressBar
+    lateinit var mgPotato: ProgressBar
+    lateinit var mgCauli: ProgressBar
+    lateinit var mgBeet: ProgressBar
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_competition)
@@ -37,9 +57,7 @@ suspend fun completeCompetition() = coroutineScope {
 
  val mn:Deferred<String> = async{
         //MINSK
-        val mnPotato: ProgressBar = findViewById(R.id.prgBar_minskPotato)
-        val mnCauli: ProgressBar = findViewById(R.id.prgBar_minskCauliflower)
-        val mnBeet: ProgressBar = findViewById(R.id.prgBar_minskBeet)
+       init("prgBar_minskPotato","prgBar_minskCauliflower","prgBar_minskBeet",mnPotato,mnCauli,mnBeet)
 
         while (mnPotato.progress != MAX_VALUE_BAR && mnCauli.progress != MAX_VALUE_BAR
             && mnBeet.progress != MAX_VALUE_BAR
@@ -55,10 +73,7 @@ suspend fun completeCompetition() = coroutineScope {
 
  val bt:Deferred<String> = async {
         //BREST
-        val btPotato: ProgressBar = findViewById(R.id.prgBar_brestPotato)
-        val btCauli: ProgressBar = findViewById(R.id.prgBar_brestCauliflower)
-        val btBeet: ProgressBar = findViewById(R.id.prgBar_brestBeet)
-
+     init("prgBar_brestPotato","prgBar_brestCauliflower","prgBar_brestBeet",btPotato,btCauli,btBeet)
         while (btPotato.progress != MAX_VALUE_BAR && btCauli.progress != MAX_VALUE_BAR
             && btBeet.progress != MAX_VALUE_BAR
         ) {
@@ -74,9 +89,7 @@ suspend fun completeCompetition() = coroutineScope {
 
     val gm:Deferred<String> = async {
         //GOMEL
-        val gmlPotato: ProgressBar = findViewById(R.id.prgBar_gomelPotato)
-        val gmlCauli: ProgressBar = findViewById(R.id.prgBar_gomelcauliflower)
-        val gmlBeet: ProgressBar = findViewById(R.id.prgBar_gomelBeet)
+        init("prgBar_gomelPotato","prgBar_gomelCauliflower","prgBar_gomelBeet",gmlPotato,gmlCauli,gmlBeet)
 
         while (gmlPotato.progress != MAX_VALUE_BAR && gmlCauli.progress != MAX_VALUE_BAR
             && gmlBeet.progress != MAX_VALUE_BAR
@@ -92,9 +105,7 @@ suspend fun completeCompetition() = coroutineScope {
 
 val gn:Deferred<String> = async {
         //HRODNO
-        val hdnPotato: ProgressBar = findViewById(R.id.prgBar_grodnoPotato)
-        val hdnCauli: ProgressBar = findViewById(R.id.prgBar_grodnoCauliflower)
-        val hdnBeet: ProgressBar = findViewById(R.id.prgBar_grodnoBeet)
+    init("prgBar_grodnoPotato","prgBar_grodnoCauliflower","prgBar_grodnoBeet",hdnPotato,hdnCauli,hdnBeet)
 
         while (hdnPotato.progress != MAX_VALUE_BAR && hdnCauli.progress != MAX_VALUE_BAR
             && hdnBeet.progress != MAX_VALUE_BAR
@@ -111,10 +122,7 @@ val gn:Deferred<String> = async {
 
 val mog:Deferred<String> = async {
         //MOHILEV
-        val mgPotato: ProgressBar = findViewById(R.id.prgBar_mohilevPotato)
-        val mgCauli: ProgressBar = findViewById(R.id.prgBar_mohilevCauliflower)
-        val mgBeet: ProgressBar = findViewById(R.id.prgBar_mohilevBeet)
-
+        init("prgBar_mohilevPotato","prgBar_mohilevCauliflower","prgBar_mohilevBeet",mgPotato,mgCauli,mgBeet)
         while (mgPotato.progress != MAX_VALUE_BAR && mgCauli.progress != MAX_VALUE_BAR
             && mgBeet.progress != MAX_VALUE_BAR
         ) {
@@ -130,9 +138,7 @@ val mog:Deferred<String> = async {
 
  val vt:Deferred<String> = async {
         //VITEBSK
-        val vtPotato: ProgressBar = findViewById(R.id.prgBar_vitebskPotato)
-        val vtCauli: ProgressBar = findViewById(R.id.prgBar_vitebskCauliflower)
-        val vtBeet: ProgressBar = findViewById(R.id.prgBar_vitebskBeet)
+       init("prgBar_vitebskPotato", "prgBar_vitebskCauliflower", "prgBar_vitebskBeet", vtPotato, vtCauli, vtBeet)
 
         while (vtPotato.progress != MAX_VALUE_BAR && vtCauli.progress != MAX_VALUE_BAR
             && vtBeet.progress != MAX_VALUE_BAR
@@ -155,6 +161,14 @@ val mog:Deferred<String> = async {
     textViewWin.setText("The winner is: ${listofparts[0]}")
 
 }
+}
+
+fun init(nameP:String,nameC:String,nameB:String, prgPotato: ProgressBar, prgCauli: ProgressBar, prgBeet: ProgressBar)
+{
+     prgPotato = findViewById(R.id.nameP)
+     prgCauli = findViewById(R.id.nameC)
+     prgBeet = findViewById(R.id.nameB)
+
 }
 
     fun toAddToBar(barPotato: ProgressBar, barCauliflower: ProgressBar, barBeetroot: ProgressBar)
