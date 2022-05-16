@@ -11,8 +11,7 @@ class MyServer : LifecycleObserver{
     private val TAG = "MYHOMEWORK ACTIVITY"
 
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    fun connection()
-    {
+    fun connection() {
         Log.i(TAG,"PROCESS CONNECTED")
 
     }
@@ -23,8 +22,7 @@ class MyServer : LifecycleObserver{
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
-    fun onAny(source: LifecycleOwner?, event: Lifecycle.Event?)
-    {
+    fun onAny(source: LifecycleOwner?, event: Lifecycle.Event?) {
         Log.i(TAG, "On any() $source $event")
     }
 }
