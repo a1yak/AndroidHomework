@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frg_hw1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHW1"
+    tools:ignore="InvalidId">
+
+    <Button
+        android:id="@+id/btn_starthw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="490dp"
+        android:text="GOOOO"
+
+        />
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:id="@+id/et_wordsSum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:inputType="text"
+        android:hint="First word: "
+        android:layout_marginStart="70dp"
+        />
+    <EditText
+        android:id="@+id/et_wordsSum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="true"
+        android:inputType="text"
+        android:hint="Second word: "
+        android:layout_marginStart="250dp"
+        />
+
+    <EditText
+        android:id="@+id/editTxt_magicBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:editable="true"
+        android:hint="Ask your question: "/>
+
+    <TextView
+        android:id="@+id/tv_summ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_ballAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="220dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_riddleAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="430dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tv_riddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text=""/>
+
+    <EditText
+        android:id="@+id/et_riddles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:editable="true"
+        android:hint="This is riddle-asking program."/>
+
+</FrameLayout>
