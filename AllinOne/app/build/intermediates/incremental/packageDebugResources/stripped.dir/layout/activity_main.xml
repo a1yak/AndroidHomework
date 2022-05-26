@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/placeForFragments"
+        android:layout_width="match_parent"
+        android:layout_height="638dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp">
+
+
+
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_HW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/btn_HW1"
+        android:text="HW2" />
+    <Button
+        android:id="@+id/btn_flags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/btn_crops"
+        android:text="Flags" />
+
+    <Button
+        android:id="@+id/btn_HW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/btn_flags"
+        android:text="HW1" />
+
+    <Button
+        android:id="@+id/btn_crops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:text="HWCrops"
+        android:textSize="12sp" />
+
+</RelativeLayout>
