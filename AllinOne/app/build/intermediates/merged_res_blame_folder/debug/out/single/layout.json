@@ -4,6 +4,10 @@
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_cat.xml"
     },
     {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_flags.xml",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_flags.xml"
     },

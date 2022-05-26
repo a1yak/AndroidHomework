@@ -38,8 +38,8 @@ class FragmentCrops : Fragment() {
     override fun onStart() {
         super.onStart()
         //init()
-        GlobalScope.async { completeCompetition()
-            Toast.makeText(context, "The winner is: ${listofparts[0]}", Toast.LENGTH_LONG).show()
+        GlobalScope.async {
+            completeCompetition()
         }
     }
 
@@ -176,6 +176,7 @@ class FragmentCrops : Fragment() {
         bt.await()
         gm.await()
         gn.await()
+        Toast.makeText(context, "The winner is: ${listofparts[0]}", Toast.LENGTH_LONG).show()
     }
 
 

@@ -15,6 +15,7 @@ drawable screenshot_1
 id btn_HW1
 id btn_HW2
 id btn_calculateJump
+id btn_confirm
 id btn_crops
 id btn_flags
 id btn_starthw1
@@ -36,7 +37,9 @@ id et_catHeight
 id et_catLenght
 id et_catName
 id et_catWeight
+id et_login
 id et_number
+id et_password
 id et_riddles
 id et_tableHeight
 id et_tableLenght
@@ -121,8 +124,10 @@ layout activity_main
 layout fragment__hw2
 layout fragment_cat
 layout fragment_crops
+layout fragment_default
 layout fragment_flags
 layout fragment_hw1
+layout fragment_login
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

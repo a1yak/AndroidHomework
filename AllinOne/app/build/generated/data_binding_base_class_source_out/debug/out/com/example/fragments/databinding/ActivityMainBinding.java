@@ -4,7 +4,6 @@ package com.example.fragments.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
@@ -21,28 +20,11 @@ public final class ActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button btnCrops;
-
-  @NonNull
-  public final Button btnFlags;
-
-  @NonNull
-  public final Button btnHW1;
-
-  @NonNull
-  public final Button btnHW2;
-
-  @NonNull
   public final FrameLayout placeForFragments;
 
-  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull Button btnCrops,
-      @NonNull Button btnFlags, @NonNull Button btnHW1, @NonNull Button btnHW2,
+  private ActivityMainBinding(@NonNull RelativeLayout rootView,
       @NonNull FrameLayout placeForFragments) {
     this.rootView = rootView;
-    this.btnCrops = btnCrops;
-    this.btnFlags = btnFlags;
-    this.btnHW1 = btnHW1;
-    this.btnHW2 = btnHW2;
     this.placeForFragments = placeForFragments;
   }
 
@@ -73,38 +55,13 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_crops;
-      Button btnCrops = ViewBindings.findChildViewById(rootView, id);
-      if (btnCrops == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_flags;
-      Button btnFlags = ViewBindings.findChildViewById(rootView, id);
-      if (btnFlags == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_HW1;
-      Button btnHW1 = ViewBindings.findChildViewById(rootView, id);
-      if (btnHW1 == null) {
-        break missingId;
-      }
-
-      id = R.id.btn_HW2;
-      Button btnHW2 = ViewBindings.findChildViewById(rootView, id);
-      if (btnHW2 == null) {
-        break missingId;
-      }
-
       id = R.id.placeForFragments;
       FrameLayout placeForFragments = ViewBindings.findChildViewById(rootView, id);
       if (placeForFragments == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, btnCrops, btnFlags, btnHW1, btnHW2,
-          placeForFragments);
+      return new ActivityMainBinding((RelativeLayout) rootView, placeForFragments);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

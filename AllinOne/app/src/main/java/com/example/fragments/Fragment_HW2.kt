@@ -49,7 +49,7 @@ class Fragment_HW2 : Fragment() {
     }
 
     fun summOfnumbers(){
-        var num = binding.etNumber.getText().toString()
+        val num = binding.etNumber.text.toString()
         var number:Int = Integer.parseInt(num)
         var result:Int=0
         var tempnumber:Int=0
@@ -92,16 +92,6 @@ class Fragment_HW2 : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Fragment_HW2.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
         fun newInstance() =
             Fragment_HW2().apply {
                 arguments = Bundle().apply {
