@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:context=".FragmentDefault">
+
+    <Button
+        android:id="@+id/btn_HW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW2"
+        android:layout_marginVertical="10dp"/>
+    <Button
+        android:id="@+id/btn_flags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flags"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btn_HW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="HW1" />
+
+    <Button
+        android:id="@+id/btn_crops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="HWCrops"
+        android:textSize="12sp" />
+
+</LinearLayout>
