@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable audia4
+drawable bmw2series
+drawable chevrolet_blazer_angularfront
+drawable ford
+drawable hyundai_accent_angularfront
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable kiasorrento
+drawable mazda_cx_30_angularfront
+drawable mercedes_benz_a_class_sedan_angularfront
+drawable volkswagen_jetta_angularfront
+drawable volkswagen_tiguan_angularfront
+id carModel
+id carPrice
+id cars
+id lv_carList
+id picture
+layout activity_main
+layout cars
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.AdapterViewHomework

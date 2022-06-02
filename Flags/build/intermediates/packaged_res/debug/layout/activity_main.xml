@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/estonia3"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/estonia2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/estonia1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/estonia"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000FF"
+         />
+
+    <TextView
+        android:id="@+id/estonia2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/estonia1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/estonia"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="44dp"
+        android:text="Estonia"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/spain3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/spain2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0dp"
+        android:background="#FF0000"
+        />
+
+    <TextView
+        android:id="@+id/spain1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/spain"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/spain2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spain1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFFF00" />
+
+    <TextView
+        android:id="@+id/spain"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="344dp"
+        android:text="Spain"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/france"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="200dp"
+        android:text="France"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/france3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/france"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/france2"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/france1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/france"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="12dp"
+        android:background="#0000FF" />
+
+    <TextView
+        android:id="@+id/france2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/france"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/france1"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/italy"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="200dp"
+        android:text="Italy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/italy3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/france"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/italy2"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/italy1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/italy"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="12dp"
+        android:background="#00FF00" />
+
+    <TextView
+        android:id="@+id/italy2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/france"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/italy1"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/russia"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="44dp"
+        android:text="Russia"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/russia3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/russia2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="0dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/russia1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/russia"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/russia2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/russia1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="0dp"
+        android:background="#0000FF"
+        />
+
+    <TextView
+        android:id="@+id/england"
+        android:layout_width="121dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="257dp"
+        android:layout_marginTop="344dp"
+        android:text="England"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/england3"
+        android:layout_width="115dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/england4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="18dp"
+        android:background="#FF0000" />
+
+
+    <TextView
+        android:id="@+id/england4"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/england"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/england2"
+        android:background="@color/white" />
+
+
+    <TextView
+        android:id="@+id/england11"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/england"
+        android:layout_marginStart="-65dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/england2"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/england5"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/england3"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/england2"
+        android:background="@color/white" />
+
+
+    <TextView
+        android:id="@+id/england10"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/england3"
+        android:layout_marginStart="-65dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/england2"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/england2"
+        android:layout_width="15dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/england"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="12dp"
+        android:background="#FF0000" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginBottom="194dp"
+        app:srcCompat="@drawable/screenshot_1" />
+
+
+</RelativeLayout>

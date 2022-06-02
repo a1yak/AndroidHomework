@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">crop</string>
+    <string name="beet">beet</string>
+    <string name="potato">potato</string>
+</resources>
