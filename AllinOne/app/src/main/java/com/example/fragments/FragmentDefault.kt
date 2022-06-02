@@ -14,10 +14,10 @@ class FragmentDefault : Fragment() {
     var _binding:FragmentDefaultBinding?=null
     val binding get() = _binding
 
-    val frg_Crop = FragmentCrops.newInstance()
-    val frg_HW1 = FragmentHW1.newInstance()
-    val frg_HW2 = Fragment_HW2.newInstance()
-    val frg_Flags = Fragment_flags.newInstance()
+    val frg_Crop = FragmentCrops()
+    val frg_HW1 = FragmentHW1()
+    val frg_HW2 = Fragment_HW2()
+    val frg_Flags = Fragment_flags()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
