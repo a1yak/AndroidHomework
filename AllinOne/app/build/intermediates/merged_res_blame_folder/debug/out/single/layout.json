@@ -16,6 +16,10 @@
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_default.xml"
     },
     {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_blank.xml",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_blank.xml"
+    },
+    {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_hw1.xml",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_hw1.xml"
     },

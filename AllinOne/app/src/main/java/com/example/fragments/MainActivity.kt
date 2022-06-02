@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val frg_login = FragmentLogin()
+        val frg_login = FragmentLogin.newInstance("admin", "password")
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.placeForFragments, frg_login)
