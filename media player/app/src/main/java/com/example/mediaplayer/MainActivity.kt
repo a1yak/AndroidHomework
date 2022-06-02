@@ -10,8 +10,7 @@ import android.widget.SeekBar
 
 class MainActivity : AppCompatActivity() {
     lateinit var runnable: Runnable
-     var handler: Handler = Handler()
-
+   private var handler = Handler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,9 +20,10 @@ class MainActivity : AppCompatActivity() {
         val btn_prevSong :ImageButton = findViewById(R.id.btn_prev)
         var media: MediaPlayer? = MediaPlayer.create(this, R.raw.lada)
         val seekBar: SeekBar = findViewById(R.id.skBar_song)
+        seekBar.progress=0
         seekBar.max = media?.duration!!
         btn_play.setOnClickListener {
-            if(media!!.isPlaying)
+            if(!media!!.isPlaying)
             {
                 media?.start()
                 btn_play.setImageResource(R.drawable.ic_baseline_pause_24)
@@ -59,18 +59,20 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        media?.setOnCompletionListener {
-        seekBar.progress = 0
-            btn_play.setImageResource(R.drawable.ic_play_arrow_24)
-        }
 
         runnable = Runnable {
-            seekBar.progress = media!!?.currentPosition
+            seekBar.progress = media!!.currentPosition
             handler.postDelayed(runnable, 1000)
         }
         handler.postDelayed(runnable, 1000)
         media?.release()
         media = null
+
+        media?.setOnCompletionListener {
+            seekBar.progress = 0
+            btn_play.setImageResource(R.drawable.ic_play_arrow_24)
+        }
+
     }
 
 }
