@@ -1,5 +1,12 @@
 R_DEF: Internal format may change without notice
 local
+anim button_bounce
+anim fade_in
+anim fade_out
+anim flip_text
+anim scale_text
+anim slide_in
+anim slide_out
 color black
 color purple_200
 color purple_500
@@ -21,6 +28,8 @@ id btn_flags
 id btn_starthw1
 id btn_starthw2
 id btn_starthw2cat
+id btn_toScale
+id btn_trick
 id editTxt_magicBall
 id england
 id england10

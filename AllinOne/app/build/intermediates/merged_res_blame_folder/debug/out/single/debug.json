@@ -8,20 +8,32 @@
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_cat.xml.flat",
-        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_cat.xml"
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_in.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\slide_in.xml"
     },
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_crops.xml.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_crops.xml"
     },
     {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_cat.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\layout\\fragment_cat.xml"
+    },
+    {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_scale_text.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\scale_text.xml"
+    },
+    {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_out.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\slide_out.xml"
     },
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -30,6 +42,10 @@
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_fade_in.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
@@ -72,12 +88,24 @@
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_flip_text.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\flip_text.xml"
+    },
+    {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_button_bounce.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\button_bounce.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\anim_fade_out.xml.flat",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\src\\main\\res\\anim\\fade_out.xml"
     },
     {
         "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AllinOne\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.jpg.flat",

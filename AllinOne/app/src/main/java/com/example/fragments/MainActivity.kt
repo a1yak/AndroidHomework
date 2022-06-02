@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
         val frg_login = FragmentLogin.newInstance("admin", "password")
 
         supportFragmentManager.beginTransaction()
+            .setCustomAnimations(R.anim.slide_in,
+                  R.anim.slide_out,R.anim.fade_in, R.anim.fade_out)
             .replace(R.id.placeForFragments, frg_login)
             .addToBackStack("Name")
             .commit()

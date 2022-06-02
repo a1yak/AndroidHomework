@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import com.example.fragments.databinding.FragmentCatBinding
 
@@ -12,11 +14,14 @@ class FragmentCat : Fragment() {
 
     private var _binding: FragmentCatBinding? = null
     private val binding get() = _binding!!
-
+    lateinit var animationText: Animation
+    lateinit var animationButton: Animation
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        animationText = AnimationUtils.loadAnimation(inflater.context, R.anim.flip_text)
+        animationButton = AnimationUtils.loadAnimation(inflater.context, R.anim.button_bounce)
         _binding = FragmentCatBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -24,6 +29,7 @@ class FragmentCat : Fragment() {
     override fun onStart() {
         super.onStart()
         binding.btnCalculateJump.setOnClickListener {
+            binding.btnCalculateJump.startAnimation(animationButton)
             catsdata()
         }
     }
@@ -72,6 +78,15 @@ class FragmentCat : Fragment() {
             }
             else {Toast.makeText(context,"${cat.getName()} can't jump up this table, it's too high for it", Toast.LENGTH_LONG).show()}
 
+        binding.btnTrick.setOnClickListener {
+            binding.etTableMaterial.startAnimation(animationText)
+            binding.etCatWeight.startAnimation(animationText)
+            binding.etTableLenght.startAnimation(animationText)
+            binding.etTableHeight.startAnimation(animationText)
+            binding.etCatLenght.startAnimation(animationText)
+            binding.etCatName.startAnimation(animationText)
+            binding.etCatHeight.startAnimation(animationText)
+        }
         }
     }
 

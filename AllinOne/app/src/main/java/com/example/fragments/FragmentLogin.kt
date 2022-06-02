@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Toast
 import com.example.fragments.databinding.FragmentLoginBinding
 import kotlinx.android.synthetic.main.fragment_login.*
@@ -26,9 +28,10 @@ class FragmentLogin : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        val frg_default = FragmentDefault.newInstance()
+        val frg_default = FragmentDefault()
+        val animation: Animation = AnimationUtils.loadAnimation(layoutInflater.context, R.anim.button_bounce)
         binding.btnConfirm.setOnClickListener{
-
+            binding.btnConfirm.startAnimation(animation)
             when {
                 binding.etLogin.text.toString() == "" ->Toast.makeText(context, "Some required fields are empty",Toast.LENGTH_SHORT).show()
                 binding.etPassword.text.toString() == "" ->Toast.makeText(context, "Some required fields are empty",Toast.LENGTH_SHORT).show()
@@ -37,7 +40,11 @@ class FragmentLogin : Fragment() {
             if (binding.etLogin.text.toString() == _LOGIN &&
                 binding.etPassword.text.toString() == _PASSWORD){
                 this.activity?.supportFragmentManager?.beginTransaction()
-                    ?.replace(R.id.placeForFragments, frg_default)?.commit()
+                    ?.setCustomAnimations(R.anim.slide_in, R.anim.slide_out,
+                        R.anim.fade_in, R.anim.fade_out)
+                    ?.replace(R.id.placeForFragments, frg_default)
+                    ?.addToBackStack("name")
+                    ?.commit()
                 }
             else {
                 Toast.makeText(context,"Incorrect password or login, try again",Toast.LENGTH_SHORT).show()

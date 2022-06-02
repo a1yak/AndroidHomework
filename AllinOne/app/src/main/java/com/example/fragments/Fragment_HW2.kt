@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fragments.databinding.FragmentHw2Binding
 import java.util.*
@@ -15,11 +17,14 @@ class Fragment_HW2 : Fragment() {
 
     private var _binding:FragmentHw2Binding? = null
     private val binding get()=_binding!!
-
+    lateinit var animationText: Animation
+    lateinit var animationButton:Animation
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        animationText = AnimationUtils.loadAnimation(inflater.context, R.anim.flip_text)
+        animationButton = AnimationUtils.loadAnimation(inflater.context, R.anim.button_bounce)
         _binding = FragmentHw2Binding.inflate(inflater, container, false)
         return binding.root
     }
@@ -33,10 +38,18 @@ class Fragment_HW2 : Fragment() {
         }
         val frg_cat:Fragment = FragmentCat.newInstance()
         binding.btnStarthw2cat.setOnClickListener {
-            this.activity?.supportFragmentManager?.beginTransaction()
+            binding.btnStarthw2cat.startAnimation(animationButton)
+            this.activity?.supportFragmentManager?.beginTransaction()?.setCustomAnimations(R.anim.slide_in, R.anim.slide_out, R.anim.fade_in, R.anim.fade_out)
                 ?.replace(R.id.placeForFragments, frg_cat)
                 ?.addToBackStack("Gucci")
                 ?.commit()
+        }
+
+        binding.btnToScale.setOnClickListener {
+            binding.tvSummOfNumbers.startAnimation(animationText)
+            binding.tvSummOfValues.startAnimation(animationText)
+            binding.tvRangeOfNumber.startAnimation(animationText)
+            binding.introRange.startAnimation(animationText)
         }
     }
 
@@ -98,4 +111,5 @@ class Fragment_HW2 : Fragment() {
                 }
             }
     }
+
 }

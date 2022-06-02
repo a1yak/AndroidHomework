@@ -25,6 +25,9 @@ public final class FragmentCatBinding implements ViewBinding {
   public final Button btnCalculateJump;
 
   @NonNull
+  public final Button btnTrick;
+
+  @NonNull
   public final EditText etCatHeight;
 
   @NonNull
@@ -49,12 +52,13 @@ public final class FragmentCatBinding implements ViewBinding {
   public final TextView tvIntroCat;
 
   private FragmentCatBinding(@NonNull FrameLayout rootView, @NonNull Button btnCalculateJump,
-      @NonNull EditText etCatHeight, @NonNull EditText etCatLenght, @NonNull EditText etCatName,
-      @NonNull EditText etCatWeight, @NonNull EditText etTableHeight,
+      @NonNull Button btnTrick, @NonNull EditText etCatHeight, @NonNull EditText etCatLenght,
+      @NonNull EditText etCatName, @NonNull EditText etCatWeight, @NonNull EditText etTableHeight,
       @NonNull EditText etTableLenght, @NonNull EditText etTableMaterial,
       @NonNull TextView tvIntroCat) {
     this.rootView = rootView;
     this.btnCalculateJump = btnCalculateJump;
+    this.btnTrick = btnTrick;
     this.etCatHeight = etCatHeight;
     this.etCatLenght = etCatLenght;
     this.etCatName = etCatName;
@@ -95,6 +99,12 @@ public final class FragmentCatBinding implements ViewBinding {
       id = R.id.btn_calculateJump;
       Button btnCalculateJump = ViewBindings.findChildViewById(rootView, id);
       if (btnCalculateJump == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_trick;
+      Button btnTrick = ViewBindings.findChildViewById(rootView, id);
+      if (btnTrick == null) {
         break missingId;
       }
 
@@ -146,7 +156,7 @@ public final class FragmentCatBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentCatBinding((FrameLayout) rootView, btnCalculateJump, etCatHeight,
+      return new FragmentCatBinding((FrameLayout) rootView, btnCalculateJump, btnTrick, etCatHeight,
           etCatLenght, etCatName, etCatWeight, etTableHeight, etTableLenght, etTableMaterial,
           tvIntroCat);
     }
