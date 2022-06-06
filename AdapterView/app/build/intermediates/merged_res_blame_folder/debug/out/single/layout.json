@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AdapterView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\cars.xml",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AdapterView\\app\\src\\main\\res\\layout\\cars.xml"
+    },
+    {
+        "merged": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AdapterView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\android\\Homework\\dzKotlin\\AndroidHomework\\AdapterView\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

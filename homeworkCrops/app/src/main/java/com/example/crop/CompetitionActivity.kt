@@ -15,7 +15,6 @@ import java.util.Collections.list
 class CompetitionActivity : AppCompatActivity() {
     private val MAX_VALUE_BAR = 110
     private var listofparts:MutableList<String> = mutableListOf()
-
     lateinit var vtPotato: ProgressBar
     lateinit var vtCauli: ProgressBar
     lateinit var vtBeet: ProgressBar
